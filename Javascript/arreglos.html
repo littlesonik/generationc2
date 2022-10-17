@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+        //Arreglos - Arrays
+        //Conjunto de datos, ordenados segun su ingreso. Separados por coma.
+        //TODOS los arreglos comienzan en la posicion (0).
+
+        //Los arreglos = tamaño predefinido, no puede cambiar.
+        //La lista = tamaño dinamico.
+
+    var vocales = ["u","i", "e", "o", "a"];// El primer elemento (a) est{a en la posicion (0).
+    //Este arreglo tiene 5 elementos, el ultimo está en la posición 4
+    //el primero en la posición 0
+
+    console.log(vocales);
+    //lenght -> cantidad de elementos en el arreglo.
+    
+    console.log(vocales[0], vocales[1],vocales[2], vocales[3], vocales[4]);
+    console.log(vocales[-1]);
+    console.log(vocales[0]);
+
+    vocales[1] = "y";
+    console.log(vocales);
+
+    vocales.push("i");
+    console.log(vocales)
+    //Agrega un dato al final del arreglo
+
+    vocales.pop()
+    console.log(vocales);
+    //pop, elimina el ultimo dato del arreglo.
+
+    vocales.pop()
+    vocales.pop()
+    vocales.pop()
+    vocales.pop()
+    vocales.pop()
+    console.log(vocales) // [] queda un arreglo vacío.
+    console.log(vocales.lenght)
+    // EL TAMAÑO de este arreglo es CERO, no es nulo.
+    //siempre se eliminan los ultimos elementos.
+
+    vocales.push(1);
+    vocales.push(8);
+    var ultimo = vocales.pop();
+    console.log(ultimo);//8
+
+    /*
+    vocales = "aeiou";
+    console.log(vocales)
+    console.log("string aeiou", vocales[3]) ->se imprime la letra o.
+    */
+    //TODOS los string por definicion son arreglos, cada letra tiene una posicion y se puede acceder a ella.
+    // por eso aqui se imprime la letra (o), porque se solicita mostrar la 3 posición.
+
+    </script>
+</body>
+</html>
