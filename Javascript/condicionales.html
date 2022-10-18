@@ -78,17 +78,21 @@
 
         /* Validar si un numero es mayor o menor o igual a 0 */
         
-        var NumeroAValidar = parseInt(prompt("Ingresa un numero para validar", 0)); // un solo (=) es para asignar un valor
+        var numeroAValidar = parseInt(prompt("Ingresa un numero para validar", 0)); // un solo (=) es para asignar un valor
         if(numeroAValidar == 0)/* se usa dos (==) para comparar, si se usa uno solo, le estoy asignando un valor a la var dentro del if*/
         {
             console.log("El numero es igual a cero")
         }else if(numeroAValidar > 0){
             console.log("El numero es mayor a cero")
-        }else(NumeroAValidar < 0){
-            console.log("El numero es negativo")
-        };
+        }else{
+            console.log("El numero es negativo")}
+        ;
 
-
+        //******Como validar el NaN, los null, los espacios undefined
+        // imprimir en la pagina
+        //Validando el NaN
+        // if (Number.isInteger(edad)){}
+        // if (Number.isNaN(edad)){}
     </script>
 </body>
 </html>
