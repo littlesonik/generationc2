@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Club de los Tigritos</title>
+</head>
+<body>
+<script>
+//Verificar mayoria de edad 
+//Pedirle el nombre, apellido, correo, direccion y numero de telefono
+
+console.log("menu usuario")
+console.log("-------------------------------------")
+        
+        //Verificar si es mayor de edad
+        var edad = parseInt(prompt('Ingresar edad', 'edad'));
+        if(edad>=18){
+            console.log('Puedes continuar')
+            console.log('     *****','   ', '     *****')
+
+            console.log ('Edad: ',edad);
+            
+            //Una vez se valida, hacemos el resto de preguntas
+            var nombre = prompt('Ingresar Nombre', 'Nombre');
+            console.log ('Nombre:', nombre);
+            
+            var apellido = prompt('Ingresar apellido', 'apellido');
+            console.log ('Apellido: ',apellido);
+            
+            var correo = prompt('Ingresar correo', 'correo');
+            console.log ('Correo: ', correo);
+            
+            var direccion = prompt('Ingresar direcccion', 'direccion');
+            console.log ('Dirección: ',direccion);
+            
+            var telefono = prompt('Ingresar telefono: +569', 'telefono');
+            console.log ('Telefono: +569', telefono);
+            console.log('     *****','   ', '     *****');
+						
+            document.write('              menu usuario');
+            document.write("<br>");
+            document.write('-------------------------------------');
+            document.write("<br>");
+            document.write('La edad es: ', edad);
+            document.write("<br>");
+            document.write('El nombre es: ', nombre);
+            document.write("<br>");
+            document.write('El apellido es: ', apellido);
+            document.write("<br>");
+            document.write('El correo es: ', correo);
+            document.write("<br>");
+            document.write('La direccion es: ', direccion);
+            document.write("<br>");
+            document.write('El telefono es: ', telefono);
+            
+
+        }else{
+        	//mostrar lo que sucede si es menor de edad
+            console.log('Lo sentimos, es menor de edad, no puede continuar')
+            console.log('                       __');
+            console.log('                     .º  º.');
+            console.log('                 _.-º/  |  |');
+            console.log('    ,        _.-"  ,|  /  0 `-.');
+            console.log('    ||    .-"       `--""-.__.º=====================-,');
+            console.log('    | º-º`        .___.--._)=========================|');
+            console.log('     |            .º      |                          |');
+            console.log('      |     /,_.-º        |         Para su          |');
+            console.log('    _/   _.º(             |          casa            |');
+            console.log('   /  ,-º |  |            |          Menor           |');
+            console.log('   |  |    `-º            |                          |');
+            console.log('    `-º                    --------------------------');
+        
+        }
+
+
+        //******Como validar el NaN, los null, los espacios undefined
+        // imprimir en la pagina
+        //Validando el NaN
+        // if (Number.isInteger(edad)){}
+        // if (Number.isNaN(edad)){}
+
+</script>
+</body>
+</html>
