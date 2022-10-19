@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuesta Club de los Tigritos</title>
+    <title>ActividadFormulario</title>
 </head>
 <body>
-<script>
-//Verificar mayoria de edad 
-//Pedirle el nombre, apellido, correo, direccion y numero de telefono
-
-console.log("menu usuario")
-console.log("-------------------------------------")
+    <script>
+        
         
         //Verificar si es mayor de edad
-        var edad = parseInt(prompt('Ingresar edad', 'edad'));
+        console.log("              menu usuario")
+        console.log("-------------------------------------")
+        
+        var edad;
+        do{
+            edad = parseInt(prompt('Ingresar edad', 'ingrese valor numerico'));
+        }while (isNaN(edad));
+        
         if(edad>=18){
             console.log('Puedes continuar')
-            console.log('     *****','   ', '     *****')
-
             console.log ('Edad: ',edad);
+            console.log('     *****','   ', '     *****')
             
             //Una vez se valida, hacemos el resto de preguntas
             var nombre = prompt('Ingresar Nombre', 'Nombre');
@@ -35,10 +37,12 @@ console.log("-------------------------------------")
             var direccion = prompt('Ingresar direcccion', 'direccion');
             console.log ('Dirección: ',direccion);
             
-            var telefono = prompt('Ingresar telefono: +569', 'telefono');
-            console.log ('Telefono: +569', telefono);
-            console.log('     *****','   ', '     *****');
-						
+            var telefono;
+        do{
+            telefono = parseInt(prompt('Ingresa numero de telefono: +569 _____', 'ingrese valor numerico'));
+        }while (isNaN(telefono));
+
+            //Impresion de docuemntos en pantalla
             document.write('              menu usuario');
             document.write("<br>");
             document.write('-------------------------------------');
@@ -54,10 +58,9 @@ console.log("-------------------------------------")
             document.write('La direccion es: ', direccion);
             document.write("<br>");
             document.write('El telefono es: ', telefono);
-            
+
 
         }else{
-        	//mostrar lo que sucede si es menor de edad
             console.log('Lo sentimos, es menor de edad, no puede continuar')
             console.log('                       __');
             console.log('                     .º  º.');
@@ -71,6 +74,8 @@ console.log("-------------------------------------")
             console.log('   /  ,-º |  |            |          Menor           |');
             console.log('   |  |    `-º            |                          |');
             console.log('    `-º                    --------------------------');
+            
+            document.write("Lo sentimos, eres menor de edad, no puedes continuar");
         
         }
 
