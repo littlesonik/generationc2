@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //FUNCIONES
+        //es un fragmento de codigo que solo se ejecuta cuando sea llamado
+        //una función realiza una acción específica
+        
+        //ESTRUCTURA
+        function nombre_funcion(){
+            //accion o codigo a ejecutar
+        };
+        
+        //llamado a la funcion:
+        nombre_funcion();
+
+        //Ejemplo de funcion
+        function ejemplo(){
+            console.log("Estoy dentro de la función")
+        }
+
+        ejemplo();
+
+        //Explicacion de parametro y argumento
+
+        function imprimir(cantidad){//cantidad = 3
+            console.log("parametro",cantidad);
+        }
+        imprimir(3);
+        //En este ejemplo (cantidad) es el parametro y (3) es el argumento
+        
+        //Diferencia entre el parametro y una var, al definir una var antes,
+        //sigue existiendo fuera de la funcion,
+        //a diferencia del parametro que se comporta como un (let)
+        
+        var numero_impar=1;
+
+        function imprimirImpar(impar){
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar = 3
+        }
+        imprimirImpar(numero_impar);
+        console.log("numero_impar",numero_impar);
+
+
+
+    </script>
+</body>
+</html>
