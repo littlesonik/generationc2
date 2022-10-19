@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONALES</title>
+</head>
+<body>
+    <script>
+        //Condicionales
+        /* la sentencia if 
+            validar o comprobar algo para tomar alguna desición.
+            **Si la condicional es verdadera ingresará al if
+            
+            condición == true 
+
+            if(condición){
+
+                //dentro del if
+            };
+        */
+
+        var edad = 15;
+
+        // es false
+        if(edad >= 18){
+        console.log("es mayor de edad")
+        }; //buena práctica --> crear la estructura del if antes de ingresar la condicional
+
+        var edad = 19;
+
+        // en este caso es true
+        if(edad >= 18){
+        console.log("es mayor de edad")
+        };
+
+        // otra manera de preguntar, en este caso se usa el (<)
+        edad = parseInt(prompt ("Ingresa tu edad", 0)); //parseInt --> convierte el dato ingresado en number
+        if (edad < 18){                                 //prompt --> permite al usuario ingresar los datos
+        console.log("Es menor de edad")
+        };
+
+        console.clear();
+
+        //else -> de esta forma se condicionan ambas opciones (true y false)
+        if(edad >= 18){
+            console.log("Es mayor de edad")
+        }else{
+            console.log("Es menor de edad")
+        };
+
+        console.log("**************************");
+
+        //otra alternativa
+        if(edad < 18){
+            console.log("Es menor de edad")
+        }else{
+            console.log("Es mayor de edad")
+        };
+
+
+        console.log("**************************");
+        /*Validar si numero es mayor a 10 y menor a 20*/
+
+        //numero < 10; numero > 10; numero < 20; numero >20
+        //numero = 10; numero = 20
+
+        var numero = parseInt(prompt("Ingresa un numero", 0))
+        if(numero > 10 && numero < 20)
+        {
+            console.log("Puedes entrar")
+        };
+
+        // conectores &&(and), ||(or)
+        // el and es inclusivo (ambas condicionantes deben ser true para ejecutarse)
+        // en el or, solo se necesita que una de las dos sea true para que se ejecute.
+
+        /* Validar si un numero es mayor o menor o igual a 0 */
+        
+        var numeroAValidar = parseInt(prompt("Ingresa un numero para validar", 0)); // un solo (=) es para asignar un valor
+        if(numeroAValidar == 0)/* se usa dos (==) para comparar, si se usa uno solo, le estoy asignando un valor a la var dentro del if*/
+        {
+            console.log("El numero es igual a cero")
+        }else if(numeroAValidar > 0){
+            console.log("El numero es mayor a cero")
+        }else{
+            console.log("El numero es negativo")}
+        ;
+
+        //******Como validar el NaN, los null, los espacios undefined
+        // imprimir en la pagina
+        //Validando el NaN
+        // if (Number.isInteger(edad)){}
+        // if (Number.isNaN(edad)){}
+    </script>
+</body>
+</html>
