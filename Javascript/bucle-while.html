@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle while</title>
+</head>
+<body>
+    <script>
+        //While
+        //Es un ciclo infinito hasta que cumpla una condición
+        
+        /*while(condicion){
+            mientras la condicion sea verdadera, esto se va a repetir
+        }*/
+
+        var contador = 0 //definiendo variable
+        while(contador <= 5)/*1 paso*/{
+            console.log("soy bacan");/*2 paso*/
+            contador++; /*2 paso*/ //suma uno a la variable contador
+        };/*3 paso*/;
+
+        //1 paso -> valida si es true, mientras sea true, entra al while
+        //2 paso -> entra y ejecuta
+        //3 paso -> vuelve y pregunta nuevamente si es true
+
+        //Mientras el while sea true, permite el ingreso, si es false no entra.
+
+        //***DIFERENCIA ENTRE BUCLE FOR Y WHILE***
+        //El (for) es bueno cuando queremos repetir un ciclo, y conocemos el numero de veces a realizar.
+        //El (while) lo queremos solo hasta que se repita cierta condicion
+
+        var termino = true;//variable booleana (true o false)
+        var contador = 10;
+        console.log("contador", contador)
+
+        while(termino){
+            contador = contador + 10;
+            console.log("contador", contador)
+            if(contador == 200){
+                termino = false;
+            }
+        }
+        //termino , cuando contador == 200
+
+        var edad = 0
+        var año = 1996
+        console.log("en el año ", año, "tienes", edad, "años")
+        while(año < 2022){
+            año++;
+            edad++;
+            console.log("en el año ", año, "tienes", edad, "años")
+        }
+
+    </script> 
+</body>
+</html>|
