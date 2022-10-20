@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //Escribir un programa que muestre un prompt donde el usuario ingresa un número,
+    //luego muestra otro prompt pidiendo otro número,
+    //finalmente el programa muestra una alerta con el resultado de la suma.
+
+        var num1 = parseInt(prompt("ingresa el primer numero"))
+        var num2 = parseInt(prompt("ingresa otro numero"))
+
+        suma = num1 + num2
+        alert("la suma es " + suma);
+
+        //Pedir un número a un usuario a través de un prompt
+        //y luego dividirlo por 10,
+        //ejemplo: 5 / 10  igual 0.5
+
+        var num3 = parseInt(prompt("ingresa un numero"))
+        var dividir = num3 / 10
+        alert("tu numero dividido en 10 es: " + dividir)
+
+
+        //Crear un programa que determine si un número introducido en un Prompt es par o no,
+        //la respuesta será mostrada en una alerta.
+        var par = parseInt(prompt("ingresa un numero"))
+        if(par % 2 == 0 ){
+            alert("tu numero es par")
+        }else{
+            alert("tu numero es impar")
+        }
+
+        //(VALOR % 2 == 0) <- PAR --> compara si el numero es entero, si la division da un entero es par
+        //(VALOR % 2 == 1) <- IMPAR --> en la division si el numero te da un decimal, es impar
+
+        //Crear un programa que determine si un número introducido en un Prompt es divisible por 5 o no,
+        //mostrar el resultado con console.log
+        var divisiblecinco = parseInt(prompt("ingresa un numero"))
+        if(divisiblecinco % 5 == 0){
+            console.log("tu numero es divisible por 5")
+        }else{
+            console.log("tu numero no es divisible por 5")
+        }
+
+    </script>
+</body>
+</html>
