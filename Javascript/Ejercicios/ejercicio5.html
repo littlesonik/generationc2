@@ -9,15 +9,17 @@
 <body>
     <script>
     //5. Encuentra el mayor (max): Dado un array con múltiples valores, escribe un programa que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7).
-    console.log("dado el array [1,5,2,8] encuentra el numero mayor")
-    var array = [1,5,2,8]
-    var numMayor = 0
-        for(let i = 0 ; i < array.length ; i++){ //array.length = 4 
-        if (array[i] > numMayor ){ // array[3] = 8
-        numMayor = array[i]
-        }
-    }
-console.log(numMayor)
+    //console.log("dado el array [1,5,2,8] encuentra el numero mayor")
+    
+    var array = [3, 8, 5, 9, 6];
+    var numMayor = 0;
+
+    for (let i = 0; i < array.length; i++){
+        if( array[i] > numMayor){
+            numMayor = array[i];
+        };
+    };
+    console.log("el numero mayor es: " + numMayor);
 
     </script>
 </body>

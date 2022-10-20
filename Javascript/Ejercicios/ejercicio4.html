@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+
+    //4. Itera un array: Escribe un programa que devuelva la suma de todos los valores dentro de un array (ej:  [1,2,5] retorna 8. [-5,2,5,12] retorna 14). 
+	//   var arreglo_ej4 = [2, 7, 10, ]
+
+    var arrays = [4, 3, 9, 10, 6];
+    var suma_arrays = 0;
+    console.log("los numeros a sumar son: ", arrays);
+    for (let i = 0; i < arrays.length; i++) {
+        suma_arrays = suma_arrays + arrays[i]
+    }
+    console.log("la suma total es: " + suma_arrays);
+
+
+    //segunda version
+    var arrays = [4, 3, 9, 10, 6];
+    var suma_arrays = arrays[0] + arrays[1] + arrays[2] + arrays[3] + arrays[4];
+    console.log(suma_arrays)
+    </script>
+</body>
+</html>
