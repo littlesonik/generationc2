@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba JavaScript Iván Zapata</title>
+</head>
+<body>
+    <script>
+
+/*
+José es el dueño de un minimarket de barrio, lleva más de 15 años administrando el
+funcionamiento completo de su negocio, siempre lo ha hecho de manera análoga, lo cual en un
+inicio no presentaba problemas, pero con el pasar de los años esto ha generado errores
+humanos, pérdidas de registros, documentos estropeados por la antigüedad y una nula
+posibilidad de poder estudiar el real crecimiento de su negocio año tras año.
+José te contrata para generar un software para su negocio.
+En esta segunda instancia tu tarea será generar funciones utilizando JavaScript*/
+
+/*
+Funciones solicitadas:
+obs: los días se deben ingresar como tipo String y los valores de los productos a
+comprar se deben trabajar con arreglos, por ejemplo = [1000,500,650,8000]
+*/
+
+/*Don José todos los martes y jueves realiza un 20% de descuento en el total de las
+compras, crea una función la cual debe recibir un parámetro del día y el arreglo de
+valores de los productos a comprar, esta debe retornar el total final de la compra según
+corresponda o no descuento.*/
+
+var producto1 = parseInt(prompt("ingrese el valor del producto", 0))
+var producto2 = parseInt(prompt("ingrese el valor del producto", 0))
+var producto3 = parseInt(prompt("ingrese el valor del producto", 0))
+var producto4 = parseInt(prompt("ingrese el valor del producto", 0))
+var precio_productos = [producto1, producto2, producto3, producto4];
+var suma_productos = 0
+var dia = [1,2,3,4,5,6,7]
+
+function descuento_del_20(dia){
+    for (let i = 0; i < precio_productos.length; i++) {
+        suma_productos = suma_productos + precio_productos[i];
+    }if(dia == 2 || dia == 4 ){
+        suma_productos = suma_productos * 0.8}
+        return suma_productos;
+}
+console.log(precio_productos);
+var pagototal = descuento_del_20();
+console.log
+console.log("el total es: $" + pagototal);
+
+
+/*● Don José hace un 5% de descuento a los clientes que compran más de 3 productos y al
+menos uno de ellos tiene un valor mayor a 10.000, realiza una función que calcule el
+total verificando si corresponde o no el descuento.*/
+
+/*● Se desea tener una función verificadora encargada de revisar si dentro de el arreglo de
+valores de los productos a comprar no existan valores negativos ingresados por error,
+en caso de no existir debe retornar un mensaje de éxito, en caso contrario debe retornar
+un mensaje de error junto con el número negativo y el índice en el que se encontraba.*/
+
+/*● Dado el siguiente arreglo [200,5500,900,7000,500,300] con los valores de cada
+producto*/
+
+//○ Crea una función que retorne el valor del producto más costoso.
+//○ Crea una función que retorne el valor del producto menos costoso.
+
+
+    </script>
+</body>
+</html>
