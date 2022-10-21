@@ -9,7 +9,7 @@
 <body>
     <script>
         //FUNCIONES
-        //es un fragmento de codigo que solo se ejecuta cuando sea llamado
+        //fragmento de codigo que solo se ejecuta cuando sea llamado
         //una función realiza una acción específica
         
         //ESTRUCTURA
@@ -17,8 +17,7 @@
             //accion o codigo a ejecutar
         };
         
-        //llamado a la funcion:
-        nombre_funcion();
+        nombre_funcion(); //llamado a la funcion
 
         //Ejemplo de funcion
         function ejemplo(){
@@ -46,10 +45,61 @@
             console.log("numero_impar",numero_impar);
             numero_impar = 3
         }
+
         imprimirImpar(numero_impar);
         console.log("numero_impar",numero_impar);
 
+        //Retorno
+        function sumaNumeros(){
+            console.log(numero_impar + 4); //console.log(3+4)
+            return numero_impar + 4; //return 7
+        }
 
+        var numeroRetornado = sumaNumeros();
+        // var numeroRetornado = 7;
+        //la función al llamarla nos está "devolviendo" algo,
+        //en este caso, nos devuelve el valor 7
+        console.log("numero retornado", numeroRetornado);
+
+        function sumaImpar(){
+            return 3 + 5; //return 8
+        }
+
+        var impares = sumaImpar()
+        console.log(impares) // devuelve el valor 8
+        console.clear();
+
+        function multiplicacion(numero1, numero2){
+            console.log(numero1 + " * " + numero2);
+            return numero1 * numero2;            
+        }
+
+        var resultadoMulti = multiplicacion(24, 76);
+        console.log("el resultado es", resultadoMulti);
+
+        function crearNuevoarreglo(numero){
+            var arreglo = [];
+            for (let i = 0; i <= numero; i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+
+        var numeroIngresado = parseInt(prompt("ingresa un numero", 0));
+        var miArreglo = crearNuevoarreglo(numeroIngresado);
+        console.log("mi arreglo es: " + miArreglo);
+
+
+        function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= prompt("ingresa un numero", 0);
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
 
     </script>
 </body>
